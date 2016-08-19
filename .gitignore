@@ -1,0 +1,4 @@
+node_modules
+*.publishsettings
+
+node_modules\*
