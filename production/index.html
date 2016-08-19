@@ -33,11 +33,11 @@
         <div class="top_nav">
           <div class="nav_menu">
             <nav class="" role="navigation">
-              <div class="inline-block"><h1 class="inlinetitle">Smart mobility</h1></div>
+              <div class="inline-block"><h1 class="inlinetitle">Smart Mobility</h1></div>
 
               <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
                 <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                <span>August 21, 2016 - August 28, 2016</span> <b class="caret"></b>
               </div>
               <!--
               <ul class="nav navbar-nav navbar-right">
@@ -66,7 +66,7 @@
               <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-car"></i> Total Redirected</span>
+              <span class="count_top"><i class="fa fa-car"></i> Cars Redirected</span>
               <div class="count green">12,513</div>
               <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
             </div>
@@ -115,11 +115,9 @@
                 <div class="x_content">
 
                       <!-- real time brick 1 -->
-                        <div class="parkstatus-1">
-                        textarea
-                      </div>
-
-
+                        <div class="parkstatus parkavailable">
+                          <h1 class="parkstatus-text">Available</h1>
+                        </div>
                 </div>
               </div>
             </div>
@@ -147,6 +145,9 @@
                 </div>
                 <div class="x_content">
                   <!-- real time brick 2 -->
+                  <div class="parkstatus parkoccupied">
+                    <h1 class="parkstatus-text">Occupied</h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -175,6 +176,9 @@
                 </div>
                 <div class="x_content">
                       <!-- real time brick 3 -->
+                      <div class="parkstatus parkavailable">
+                        <h1 class="parkstatus-text">Available</h1>
+                      </div>
                 </div>
               </div>
             </div>
@@ -202,6 +206,10 @@
                 </div>
                 <div class="x_content">
 
+                  <div class="parkstatus parkoccupied">
+                    <h1 class="parkstatus-text">Occupied</h1>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -210,7 +218,7 @@
 
           <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-12">
-              <div class="x_panel tile fixed_height_320">
+              <div class="x_panel tile fixed_height_400">
                 <div class="x_title">
                   <h2>Emission reduced</h2>
                   <ul class="nav navbar-right panel_toolbox">
@@ -231,7 +239,7 @@
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <h4>CO2 Emission reduction per week</h4>
+                  <h4 class="nomargintop">CO2 Emission reduction per week</h4>
                   <div class="widget_summary">
                     <div class="w_left w_25">
                       <span>Aug 29</span>
@@ -400,21 +408,37 @@
 
 
             <div class="col-md-9 col-sm-9 col-xs-12">
-              <div class="dashboard_graph">
+              <div class="x_panel tile fixed_height_400">
+                <div class="x_title">
+                    <h2>Inhabitant Satisfaction <small>CBS Statistics</small></h2>
 
-                <div class="row x_title">
-                  <div class="col-md-6">
-                    <h3>Activities Returns <small>yep something</small></h3>
-                  </div>
-                  <div class="col-md-6">
 
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
                   </div>
-                </div>
+
 
                 <div class="col-md-9 col-sm-9 col-xs-12">
-                  <div id="placeholder33" style="height: 260px; display: none" class="demo-placeholder"></div>
-                  <div style="width: 100%;">
-                    <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
+                  <div class="x_content">
+
+                    <div id="placeholder33" style="height: 260px; display: none" class="demo-placeholder"></div>
+                      <div style="width: 100%;">
+                        <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
+                      </div>
                   </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
@@ -463,6 +487,7 @@
                 </div>
 
                 <div class="clearfix"></div>
+              </div>
               </div>
             </div>
 
@@ -524,9 +549,9 @@
     <!-- NProgress -->
     <script src="../vendors/nprogress/nprogress.js"></script>
     <!-- Chart.js -->
-    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- <script src="../vendors/Chart.js/dist/Chart.min.js"></script> -->
     <!-- gauge.js -->
-    <script src="../vendors/bernii/gauge.js/dist/gauge.min.js"></script>
+    <!-- <script src="../vendors/bernii/gauge.js/dist/gauge.min.js"></script> -->
     <!-- bootstrap-progressbar -->
     <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->

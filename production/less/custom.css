@@ -358,6 +358,10 @@ body {
 .fixed_height_200 {
   height: 200px;
 }
+
+.fixed_height_400 {
+height: 352px;
+}
 .overflow_hidden {
   overflow: hidden
 }
@@ -867,6 +871,9 @@ legend {
 /** Contacts **/
 .profile_details:nth-child(3n){
     clear:both;
+}
+.nomargintop {
+  margin-top: 0px;
 }
 
 .profile_details .profile_view {
@@ -4777,6 +4784,7 @@ ul.notifications {
     display: inline-block;
     margin-top: 5px;
     margin-left: 20px;
+    font-weight: 600;
   }
 
   .inline-block {
@@ -4788,6 +4796,30 @@ ul.notifications {
     margin-top: 10px;
   }
 
-  .parkstatus-1 {
-
+  .parkstatus {
+    text-align: center;
+    margin: -2px -5px -2px -6px;
+    border-radius: 4px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
+
+  .parkoccupied {
+    background-color: #d9534f;
+  }
+
+  .parkavailable {
+    background-color: #3fc1a5;
+  }
+
+  .parkstatus-text {
+    color: #FFF;
+  }
+  /*.x_content {
+    padding: 0 5px 6px;
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 5px;
+  }*/
