@@ -6,6 +6,11 @@ var port = process.env.PORT || 5000
 var mqtt = require("mqtt")
 var jsonfile = require('jsonfile')
 
+var mqttserver = 'm21.cloudmqtt.com';
+var user = 'whccpczo';
+var userpw = '	ebF4XZrEmZhl';
+var wsport = '13964';
+var topic = '/ddnl-iot-poc/#';
 //  /ddnl-iot-poc/14727268
 //  /ddnl-iot-poc/1768451
 // /ddnl-iot-poc/8970155
@@ -29,21 +34,20 @@ wss.on("connection", function (ws) {
 })
 
 /// MQTT part
-var mqttClient = mqtt.connect('mqtt://broker.mqttdashboard.com', {});
+var mqttClient = mqtt.connect(mqttserver, {});
 
 mqttClient.on('connect', function () {
-  var topic = '/ddnl-iot-poc/#';
   console.log('Subscribing to ' + topic);
   mqttClient.subscribe(topic);
 });
 
 mqttClient.on('message', function (topic, messageBuffer) {
     // messageBuffer is Buffer
-    console.log(topic);
+    // console.log(topic);
     var messageJson = messageBuffer.toString();
     var message = JSON.parse(messageJson);
 
-    console.dir(message);
+    console.dir("Afstand tot voorwerp: " + message + " cm");
     // var payload = base64Decode(message.payload);
     // var payloadObject = parsePayloadToObject(payload);
 
